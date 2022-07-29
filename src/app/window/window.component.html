@@ -1,0 +1,88 @@
+<div class="window-container" cdkDrag>
+
+    <div style="position: relative;">
+        
+        <div #transbox [@openClose]="transitionState" (@openClose.done)="onTransitionEnd($event)" class="trans-box"></div>
+
+    </div>
+    
+    <div class="window minimized" #winroot>
+
+        <div class="container absolute-center">
+
+            <div class="section header" cdkDragHandle>
+
+                <div class="left-corner">
+
+                    <div class="btn-container" (click)="onToggleMinimizeClick()">
+
+                        <img src="./assets/minimize.svg" width="14px">
+
+                    </div>
+
+                    <div class="btn-container" (click)="onClose()">
+
+                        <img src="./assets/close.svg" width="14px">
+
+                    </div>
+
+                </div>
+        
+                <!-- TITLE -->
+                <div class="absolute-center">{{title}}</div>
+
+                <div class="right-corner">
+
+                    <div class="btn-container">
+
+                        <img class="click-brightness" src="./assets/up-arrow.svg" style="width: 22px; transform: rotate(180deg); top: 0; left: 0;">
+
+                    </div>
+
+                    <div class="btn-container">
+
+                        <img class="click-brightness" src="./assets/up-arrow.svg" style="width: 22px;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="height: 16px;" class="section header">
+
+                <div class="sub-header">
+
+                    <span class="menu-item">
+                        <u>F</u>ile
+                    </span>
+
+                    <span class="menu-item">
+                        <u>O</u>ptions
+                    </span>
+
+                    <span class="menu-item">
+                        <u>W</u>indows
+                    </span>
+
+                    <span class="menu-item">
+                        <u>H</u>elp
+                    </span>
+              
+                </div>
+            
+            </div>
+
+            <div class="section content" style="height: calc(100% - 36px);">
+            
+                <ng-content select="[about-me]"></ng-content>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- <div #transbox [@openClose]="transitionState" (@openClose.done)="onTransitionEnd($event)" class="trans-box"></div> -->

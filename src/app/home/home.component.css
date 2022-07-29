@@ -1,0 +1,116 @@
+.boot-bg {
+
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hi-text {
+
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.home-screen {
+
+    background-color:#008282; 
+    /* color: white; */
+    height: 100vh;
+    width: 100vw;
+}
+
+.desktop {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #fff; */
+}
+
+.icons-container {
+
+    height: 500px;
+    width: 300px;
+    /* border: solid; */
+    /* text-align: center;
+    align-items: center; */
+}
+
+.icons-container .icon {
+
+    height: 100px;
+    width: 100px;
+    /* border: solid; */
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.icon img {
+
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+
+.taskbar {
+
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    min-height: 51px;
+    background-color: #C1C6CA;
+    border-top: solid white 1.6px;
+    /* overflow-x: scroll; */
+    /* float: left; */
+}
+
+.taskbar .start-button {
+
+    width: 41px;
+    height: 41px;
+    /* cursor: pointer; */
+}
+
+.taskbar .ram-os {
+
+    position: absolute;
+    top: -1px;
+    left: 13.5px;
+    width: 32px;
+}
+
+.bottom-bar-program-tab {
+
+    display: inline-block;
+    width: 221.4px;
+    height: 41px;
+    margin-bottom: 10px; 
+    margin-top: 5px; 
+    /* margin-right: 10px;  */
+    margin-left: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bottom-bar-program-tab .icon {
+
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.bottom-bar-program-tab .tab-name {
+
+    position: absolute;
+    top: 50%;
+    left: 53px;
+    transform: translate(0, -50%);
+}

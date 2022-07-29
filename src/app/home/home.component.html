@@ -1,0 +1,80 @@
+
+<div *ngIf="boot$ | async" class="boot-bg">
+
+    <app-booting [@inOut]="bootState" (@inOut.done)="bootEnd($event)"></app-booting>
+
+</div>
+
+<div [@inOut]="homeState" (@inOut.done)="deskEnd($event)">
+
+    <div class="home-screen" *ngIf="!(boot$ | async)">
+    
+        <div id="windows">
+        
+            <app-window *ngFor="let window of windows$ | async" [windowDetails]="windowDetails(window)">
+        
+            </app-window>
+            <!-- <app-window *ngIf="aboutMe" [windowDetails]="">
+                <div about-me>hello</div>
+            </app-window>
+        
+            <app-window *ngIf="aboutWork" [title]="'About Work'">
+                <div about-me>hi</div>
+            </app-window> -->
+        </div>
+        
+        <div class="desktop">
+
+            <!-- <div class="hi-text absolute-center">
+
+                I'm Sriram VS
+                <div style="margin-left: 20px; margin-top: 20px;">A Full-Stack Developer</div>
+
+            </div> -->
+        
+            <div fxLayout="column wrap" fxLayoutGap="10px" class="icons-container">
+        
+                <div (click)="createWindow(window.type)" *ngFor="let window of windows" class="icon"> 
+                
+                    <div fxLayout="column" fxLayoutGap="10px">
+        
+                        <img [src]="window.iconPath" width="53px" [alt]="window.title">
+        
+                        <div> {{window.title}} </div>
+        
+                    </div>
+                
+                </div>
+        
+            </div>
+        
+        </div>
+        
+        <div class="taskbar" fxLayout="row wrap">
+        
+            <div style="float: left; width: 41px; height: 41px; margin: 10px; margin-top: 5px; margin-right: 0; cursor: pointer;" class="click-brightness">
+        
+                <img class="start-button click-brightness" src="../../assets/start-button=small.svg">
+                <img src="../../assets/icons/ram-os.svg" class="ram-os" alt="">
+        
+        
+            </div>
+        
+        
+            <div *ngFor="let window of windows$ | async" class="bottom-bar-program-tab click-brightness" (click)="onMinimize(window.type)">
+        
+                <img width="29px" [src]="iconPath(window.type)" class="icon">
+                <div class="tab-name">{{ title(window.type) }}</div>
+                <img [src]="window.state === states.MINIMIZED ? '../../assets/bottom-bar-program-tab-min.svg' : '../../assets/bottom-bar-program-tab.svg'" style="height: 41px;">
+        
+        
+            </div>
+        
+            <!-- <img src="./assets/bottom-bar-program-tab.svg" style="margin-bottom: 10px; margin-top: 5px; margin-right: 10px; height: 41px;"> -->
+        
+        </div>
+    
+    </div>
+
+</div>
+

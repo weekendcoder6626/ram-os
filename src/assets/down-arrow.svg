@@ -1,0 +1,11 @@
+<svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1H37V35.8549H33.7273V4.16863H1V1Z" fill="#B6B6B6"/>
+<path d="M37 1V0.5H37.5V1H37ZM1 1H0.5V0.5H1V1ZM37 35.8549H37.5V36.3549H37V35.8549ZM33.7273 35.8549V36.3549H33.2273V35.8549H33.7273ZM33.7273 4.16863V3.66863H34.2273V4.16863H33.7273ZM1 4.16863V4.66863H0.5V4.16863H1ZM37 1.5H1V0.5H37V1.5ZM36.5 35.8549V1H37.5V35.8549H36.5ZM33.7273 35.3549H37V36.3549H33.7273V35.3549ZM33.2273 35.8549V4.16863H34.2273V35.8549H33.2273ZM33.7273 4.66863H1V3.66863H33.7273V4.66863ZM1.5 1V4.16863H0.5V1H1.5Z" fill="black"/>
+<rect x="1.01196" y="4.16864" width="32.7273" height="31.6863" fill="#C1C6CA" stroke="black"/>
+<rect x="1" y="32.8314" width="32.7273" height="3.16863" fill="#858585"/>
+<rect x="1" y="4.31366" width="32.7273" height="3.16863" fill="#ECEDF1"/>
+<rect x="30.4546" y="36" width="31.6863" height="3.27273" transform="rotate(-90 30.4546 36)" fill="#6F7376"/>
+<rect x="1" y="36" width="31.6863" height="3.27273" transform="rotate(-90 1 36)" fill="#B8B9BB"/>
+<rect x="1.01196" y="4.16864" width="32.7273" height="31.6863" stroke="black"/>
+<path d="M22.2608 16.8432L17.3517 16.8432H12.4426L17.3517 21.5961L22.2608 16.8432Z" fill="black" stroke="black"/>
+</svg>
