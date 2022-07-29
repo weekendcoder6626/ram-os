@@ -23,7 +23,7 @@ export class HomeComponent implements AfterViewInit {
   
   states = WindowState;
 
-  bootSubject = new BehaviorSubject<boolean>(false);
+  bootSubject = new BehaviorSubject<boolean>(true);
   boot$: Observable<boolean> = this.bootSubject.asObservable();
 
   get boot(): boolean {
